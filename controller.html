@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/controller.css" />
+		<script src="js/intercom.js"> </script>
+		<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+
+		<!-- Communicate with presentation tabs -->
+		<script>
+			var socket = io();
+
+			var next = function(){
+				socket.emit('next');
+			};
+
+			var previous = function(){
+				socket.emit('previous');
+			};
+		</script>
+
+	</head>
+	<body>
+		<div class="outer">
+			<div class="inner">
+	      <button id="prevButton" onclick="previous()">Previous</button>
+	      <button id="nextButton" onclick="next()">Next</button>
+			</div>
+    </div>
+	</body>
+</html>

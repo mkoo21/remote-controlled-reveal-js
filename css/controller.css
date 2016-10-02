@@ -1,0 +1,12 @@
+div.outer {
+  text-align: center;
+}
+div.inner {
+  vertical-align: middle;
+  margin: auto;
+}
+
+button {
+  width:100px;
+  height:100px;
+}
