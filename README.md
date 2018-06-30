@@ -9,3 +9,6 @@ Do ```npm install``` then ```npm start```.
 You need node/nodemon and npm.
 
 You can see the barebones HTML presentation at ```localhost/8080```, and the controller at ```localhost/8080/controller```. Pushing buttons on a controller open in any window will affect presentations in any other window as long as they are all connected to the same server.
+
+## Spectacle
+[Spectacle](https://github.com/FormidableLabs/spectacle) now has this feature built in. If you like React, use that instead of an ugly amateur hack like this. 
